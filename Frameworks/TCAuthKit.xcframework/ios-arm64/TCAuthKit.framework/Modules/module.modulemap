@@ -1,0 +1,6 @@
+framework module TCAuthKit {
+  umbrella header "TCAuthKit.h"
+  export *
+
+  module * { export * }
+}

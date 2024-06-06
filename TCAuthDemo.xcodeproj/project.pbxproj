@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E978ECD5D1AED3DFB6C3F80 /* Pods_TCAuthDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE254A8561A6787857363F3 /* Pods_TCAuthDemo.framework */; };
+		6C761B3D9027A3209F0C7528 /* Pods_TCAuthDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851A80167197BDF0E464D2A /* Pods_TCAuthDemoTests.framework */; };
+		F51F87922C05EA620082E15C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F51F87912C05EA620082E15C /* AppDelegate.m */; };
+		F51F87952C05EA620082E15C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F51F87942C05EA620082E15C /* SceneDelegate.m */; };
+		F51F87982C05EA620082E15C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51F87972C05EA620082E15C /* ViewController.m */; };
+		F51F879B2C05EA630082E15C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F51F879A2C05EA630082E15C /* Base */; };
+		F51F879D2C05EA640082E15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51F879C2C05EA640082E15C /* Assets.xcassets */; };
+		F51F87A02C05EA640082E15C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F51F879F2C05EA640082E15C /* Base */; };
+		F51F87A32C05EA640082E15C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F51F87A22C05EA640082E15C /* main.m */; };
+		F51F87AD2C05EA650082E15C /* TCAuthDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F51F87AC2C05EA650082E15C /* TCAuthDemoTests.m */; };
+		F51F87B72C05EA650082E15C /* TCAuthDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F51F87B62C05EA650082E15C /* TCAuthDemoUITests.m */; };
+		F51F87B92C05EA650082E15C /* TCAuthDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F51F87B82C05EA650082E15C /* TCAuthDemoUITestsLaunchTests.m */; };
+		F57FFD9B2C11A34D00535232 /* TCAuthKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57FFD9A2C11A34C00535232 /* TCAuthKit.xcframework */; };
+		F57FFD9C2C11A34D00535232 /* TCAuthKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F57FFD9A2C11A34C00535232 /* TCAuthKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8F871D4BF32BE9BBFD4BA87 /* Pods_TCAuthDemo_TCAuthDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E612969E4ED5079EB93CE58 /* Pods_TCAuthDemo_TCAuthDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F51F87A92C05EA650082E15C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F51F87852C05EA620082E15C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F51F878C2C05EA620082E15C;
+			remoteInfo = TCAuthDemo;
+		};
+		F51F87B32C05EA650082E15C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F51F87852C05EA620082E15C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F51F878C2C05EA620082E15C;
+			remoteInfo = TCAuthDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F57FFD9D2C11A34D00535232 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F57FFD9C2C11A34D00535232 /* TCAuthKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0804E676256E2664F9FE5415 /* Pods-TCAuthDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCAuthDemo.debug.xcconfig"; path = "Target Support Files/Pods-TCAuthDemo/Pods-TCAuthDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		173B213838F3E8CB19DA0038 /* Pods-TCAuthDemo-TCAuthDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCAuthDemo-TCAuthDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TCAuthDemo-TCAuthDemoUITests/Pods-TCAuthDemo-TCAuthDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		24B0CCC973851BFB92B5309E /* Pods-TCAuthDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCAuthDemoTests.release.xcconfig"; path = "Target Support Files/Pods-TCAuthDemoTests/Pods-TCAuthDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		24BE17196065796EBDD4851B /* Pods-TCAuthDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCAuthDemo.release.xcconfig"; path = "Target Support Files/Pods-TCAuthDemo/Pods-TCAuthDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2851A80167197BDF0E464D2A /* Pods_TCAuthDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCAuthDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E612969E4ED5079EB93CE58 /* Pods_TCAuthDemo_TCAuthDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCAuthDemo_TCAuthDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCC7A874755C4D8165B8E84 /* Pods-TCAuthDemo-TCAuthDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCAuthDemo-TCAuthDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TCAuthDemo-TCAuthDemoUITests/Pods-TCAuthDemo-TCAuthDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EE254A8561A6787857363F3 /* Pods_TCAuthDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCAuthDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFF11307F5D8B46512415D5 /* Pods-TCAuthDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCAuthDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TCAuthDemoTests/Pods-TCAuthDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F51F878D2C05EA620082E15C /* TCAuthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAuthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51F87902C05EA620082E15C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F51F87912C05EA620082E15C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F51F87932C05EA620082E15C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F51F87942C05EA620082E15C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F51F87962C05EA620082E15C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F51F87972C05EA620082E15C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F51F879A2C05EA630082E15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F51F879C2C05EA640082E15C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F51F879F2C05EA640082E15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F51F87A12C05EA640082E15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F51F87A22C05EA640082E15C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F51F87A82C05EA650082E15C /* TCAuthDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAuthDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51F87AC2C05EA650082E15C /* TCAuthDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAuthDemoTests.m; sourceTree = "<group>"; };
+		F51F87B22C05EA650082E15C /* TCAuthDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAuthDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51F87B62C05EA650082E15C /* TCAuthDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAuthDemoUITests.m; sourceTree = "<group>"; };
+		F51F87B82C05EA650082E15C /* TCAuthDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAuthDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		F57FFD9A2C11A34C00535232 /* TCAuthKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TCAuthKit.xcframework; path = Frameworks/TCAuthKit.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F51F878A2C05EA620082E15C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57FFD9B2C11A34D00535232 /* TCAuthKit.xcframework in Frameworks */,
+				0E978ECD5D1AED3DFB6C3F80 /* Pods_TCAuthDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51F87A52C05EA650082E15C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C761B3D9027A3209F0C7528 /* Pods_TCAuthDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51F87AF2C05EA650082E15C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F871D4BF32BE9BBFD4BA87 /* Pods_TCAuthDemo_TCAuthDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71DD713352D453FE204BB230 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0804E676256E2664F9FE5415 /* Pods-TCAuthDemo.debug.xcconfig */,
+				24BE17196065796EBDD4851B /* Pods-TCAuthDemo.release.xcconfig */,
+				5BCC7A874755C4D8165B8E84 /* Pods-TCAuthDemo-TCAuthDemoUITests.debug.xcconfig */,
+				173B213838F3E8CB19DA0038 /* Pods-TCAuthDemo-TCAuthDemoUITests.release.xcconfig */,
+				8AFF11307F5D8B46512415D5 /* Pods-TCAuthDemoTests.debug.xcconfig */,
+				24B0CCC973851BFB92B5309E /* Pods-TCAuthDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F51F87842C05EA620082E15C = {
+			isa = PBXGroup;
+			children = (
+				F51F878F2C05EA620082E15C /* TCAuthDemo */,
+				F51F87AB2C05EA650082E15C /* TCAuthDemoTests */,
+				F51F87B52C05EA650082E15C /* TCAuthDemoUITests */,
+				F51F878E2C05EA620082E15C /* Products */,
+				F51F87CA2C05EF4A0082E15C /* Frameworks */,
+				71DD713352D453FE204BB230 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F51F878E2C05EA620082E15C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F51F878D2C05EA620082E15C /* TCAuthDemo.app */,
+				F51F87A82C05EA650082E15C /* TCAuthDemoTests.xctest */,
+				F51F87B22C05EA650082E15C /* TCAuthDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F51F878F2C05EA620082E15C /* TCAuthDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F51F87902C05EA620082E15C /* AppDelegate.h */,
+				F51F87912C05EA620082E15C /* AppDelegate.m */,
+				F51F87932C05EA620082E15C /* SceneDelegate.h */,
+				F51F87942C05EA620082E15C /* SceneDelegate.m */,
+				F51F87962C05EA620082E15C /* ViewController.h */,
+				F51F87972C05EA620082E15C /* ViewController.m */,
+				F51F87992C05EA630082E15C /* Main.storyboard */,
+				F51F879C2C05EA640082E15C /* Assets.xcassets */,
+				F51F879E2C05EA640082E15C /* LaunchScreen.storyboard */,
+				F51F87A12C05EA640082E15C /* Info.plist */,
+				F51F87A22C05EA640082E15C /* main.m */,
+			);
+			path = TCAuthDemo;
+			sourceTree = "<group>";
+		};
+		F51F87AB2C05EA650082E15C /* TCAuthDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F51F87AC2C05EA650082E15C /* TCAuthDemoTests.m */,
+			);
+			path = TCAuthDemoTests;
+			sourceTree = "<group>";
+		};
+		F51F87B52C05EA650082E15C /* TCAuthDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F51F87B62C05EA650082E15C /* TCAuthDemoUITests.m */,
+				F51F87B82C05EA650082E15C /* TCAuthDemoUITestsLaunchTests.m */,
+			);
+			path = TCAuthDemoUITests;
+			sourceTree = "<group>";
+		};
+		F51F87CA2C05EF4A0082E15C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F57FFD9A2C11A34C00535232 /* TCAuthKit.xcframework */,
+				5EE254A8561A6787857363F3 /* Pods_TCAuthDemo.framework */,
+				2E612969E4ED5079EB93CE58 /* Pods_TCAuthDemo_TCAuthDemoUITests.framework */,
+				2851A80167197BDF0E464D2A /* Pods_TCAuthDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F51F878C2C05EA620082E15C /* TCAuthDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F51F87BC2C05EA650082E15C /* Build configuration list for PBXNativeTarget "TCAuthDemo" */;
+			buildPhases = (
+				C984346F98D918D12B56A5FA /* [CP] Check Pods Manifest.lock */,
+				F51F87892C05EA620082E15C /* Sources */,
+				F51F878A2C05EA620082E15C /* Frameworks */,
+				F51F878B2C05EA620082E15C /* Resources */,
+				F57FFD9D2C11A34D00535232 /* Embed Frameworks */,
+				C6354EBCAAD74BA5092313FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCAuthDemo;
+			productName = TCAuthDemo;
+			productReference = F51F878D2C05EA620082E15C /* TCAuthDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F51F87A72C05EA650082E15C /* TCAuthDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F51F87BF2C05EA650082E15C /* Build configuration list for PBXNativeTarget "TCAuthDemoTests" */;
+			buildPhases = (
+				3892AAC5C90367FA42BEFF41 /* [CP] Check Pods Manifest.lock */,
+				F51F87A42C05EA650082E15C /* Sources */,
+				F51F87A52C05EA650082E15C /* Frameworks */,
+				F51F87A62C05EA650082E15C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F51F87AA2C05EA650082E15C /* PBXTargetDependency */,
+			);
+			name = TCAuthDemoTests;
+			productName = TCAuthDemoTests;
+			productReference = F51F87A82C05EA650082E15C /* TCAuthDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F51F87B12C05EA650082E15C /* TCAuthDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F51F87C22C05EA650082E15C /* Build configuration list for PBXNativeTarget "TCAuthDemoUITests" */;
+			buildPhases = (
+				BB85E67BFC8AD7B9A21A28B1 /* [CP] Check Pods Manifest.lock */,
+				F51F87AE2C05EA650082E15C /* Sources */,
+				F51F87AF2C05EA650082E15C /* Frameworks */,
+				F51F87B02C05EA650082E15C /* Resources */,
+				7F572F2530ACFD2AD75F70FD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F51F87B42C05EA650082E15C /* PBXTargetDependency */,
+			);
+			name = TCAuthDemoUITests;
+			productName = TCAuthDemoUITests;
+			productReference = F51F87B22C05EA650082E15C /* TCAuthDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F51F87852C05EA620082E15C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F51F878C2C05EA620082E15C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F51F87A72C05EA650082E15C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F51F878C2C05EA620082E15C;
+					};
+					F51F87B12C05EA650082E15C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F51F878C2C05EA620082E15C;
+					};
+				};
+			};
+			buildConfigurationList = F51F87882C05EA620082E15C /* Build configuration list for PBXProject "TCAuthDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F51F87842C05EA620082E15C;
+			productRefGroup = F51F878E2C05EA620082E15C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F51F878C2C05EA620082E15C /* TCAuthDemo */,
+				F51F87A72C05EA650082E15C /* TCAuthDemoTests */,
+				F51F87B12C05EA650082E15C /* TCAuthDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F51F878B2C05EA620082E15C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51F879D2C05EA640082E15C /* Assets.xcassets in Resources */,
+				F51F87A02C05EA640082E15C /* Base in Resources */,
+				F51F879B2C05EA630082E15C /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51F87A62C05EA650082E15C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51F87B02C05EA650082E15C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3892AAC5C90367FA42BEFF41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCAuthDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F572F2530ACFD2AD75F70FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCAuthDemo-TCAuthDemoUITests/Pods-TCAuthDemo-TCAuthDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCAuthDemo-TCAuthDemoUITests/Pods-TCAuthDemo-TCAuthDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCAuthDemo-TCAuthDemoUITests/Pods-TCAuthDemo-TCAuthDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB85E67BFC8AD7B9A21A28B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCAuthDemo-TCAuthDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6354EBCAAD74BA5092313FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCAuthDemo/Pods-TCAuthDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCAuthDemo/Pods-TCAuthDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCAuthDemo/Pods-TCAuthDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C984346F98D918D12B56A5FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCAuthDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F51F87892C05EA620082E15C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51F87982C05EA620082E15C /* ViewController.m in Sources */,
+				F51F87922C05EA620082E15C /* AppDelegate.m in Sources */,
+				F51F87A32C05EA640082E15C /* main.m in Sources */,
+				F51F87952C05EA620082E15C /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51F87A42C05EA650082E15C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51F87AD2C05EA650082E15C /* TCAuthDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51F87AE2C05EA650082E15C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51F87B92C05EA650082E15C /* TCAuthDemoUITestsLaunchTests.m in Sources */,
+				F51F87B72C05EA650082E15C /* TCAuthDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F51F87AA2C05EA650082E15C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F51F878C2C05EA620082E15C /* TCAuthDemo */;
+			targetProxy = F51F87A92C05EA650082E15C /* PBXContainerItemProxy */;
+		};
+		F51F87B42C05EA650082E15C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F51F878C2C05EA620082E15C /* TCAuthDemo */;
+			targetProxy = F51F87B32C05EA650082E15C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F51F87992C05EA630082E15C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51F879A2C05EA630082E15C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F51F879E2C05EA640082E15C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51F879F2C05EA640082E15C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F51F87BA2C05EA650082E15C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F51F87BB2C05EA650082E15C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F51F87BD2C05EA650082E15C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0804E676256E2664F9FE5415 /* Pods-TCAuthDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SXM6G9T3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCAuthDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tiger-sec.TCAuthDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F51F87BE2C05EA650082E15C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24BE17196065796EBDD4851B /* Pods-TCAuthDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SXM6G9T3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCAuthDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tiger-sec.TCAuthDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F51F87C02C05EA650082E15C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AFF11307F5D8B46512415D5 /* Pods-TCAuthDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SXM6G9T3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tiger-sec.TCAuthDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCAuthDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCAuthDemo";
+			};
+			name = Debug;
+		};
+		F51F87C12C05EA650082E15C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B0CCC973851BFB92B5309E /* Pods-TCAuthDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SXM6G9T3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tiger-sec.TCAuthDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCAuthDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCAuthDemo";
+			};
+			name = Release;
+		};
+		F51F87C32C05EA650082E15C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCC7A874755C4D8165B8E84 /* Pods-TCAuthDemo-TCAuthDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SXM6G9T3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tiger-sec.TCAuthDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TCAuthDemo;
+			};
+			name = Debug;
+		};
+		F51F87C42C05EA650082E15C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 173B213838F3E8CB19DA0038 /* Pods-TCAuthDemo-TCAuthDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SXM6G9T3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tiger-sec.TCAuthDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TCAuthDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F51F87882C05EA620082E15C /* Build configuration list for PBXProject "TCAuthDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51F87BA2C05EA650082E15C /* Debug */,
+				F51F87BB2C05EA650082E15C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F51F87BC2C05EA650082E15C /* Build configuration list for PBXNativeTarget "TCAuthDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51F87BD2C05EA650082E15C /* Debug */,
+				F51F87BE2C05EA650082E15C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F51F87BF2C05EA650082E15C /* Build configuration list for PBXNativeTarget "TCAuthDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51F87C02C05EA650082E15C /* Debug */,
+				F51F87C12C05EA650082E15C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F51F87C22C05EA650082E15C /* Build configuration list for PBXNativeTarget "TCAuthDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51F87C32C05EA650082E15C /* Debug */,
+				F51F87C42C05EA650082E15C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F51F87852C05EA620082E15C /* Project object */;
+}
